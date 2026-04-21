@@ -61,7 +61,7 @@ name: "CI Failure Doctor"
     types:
     - completed
     workflows:
-    - Daily Perf Improver
+    - Test Workflow
     - Daily Test Coverage Improver
 
 permissions: {}
