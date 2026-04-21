@@ -17,5 +17,5 @@ jobs:
   job2:
     runs-on: ubuntu-latest
     steps:
-      - name: Echo success
-        run: echo "Job2 success"
+      - name: Fail entire job
+        run: exit 1
