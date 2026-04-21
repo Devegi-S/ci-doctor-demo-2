@@ -17,5 +17,5 @@ jobs:
   job2:
     runs-on: ubuntu-latest
     steps:
-      - name: Fail entire job
+      - name: Fail job
         run: exit 1
