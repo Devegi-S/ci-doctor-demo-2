@@ -1,0 +1,21 @@
+name: Test Workflow
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  job1:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Run Python
+        run: |
+          echo "print('Job1 success')" > app.py
+          python app.py
+
+  job2:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Echo success
+        run: echo "Job2 success"
